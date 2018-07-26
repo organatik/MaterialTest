@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+@import "../../../my-theme.scss";
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 72px;
+}
+.header {
+  background: $material-app-gradient-to-right;
+  align-items: stretch;
+  .logo {
+    display: flex;
+    flex: 1;
+  }
+  .settings {
+    display: flex;
+    div {
+      text-align: center;
+      justify-content: space-around;
+      width: 72px;
+      padding-top: 21px;
+      i {
+        font-size: 30px;
+        color: whitesmoke;
+        &:hover{
+          cursor: pointer;
+          color: mat-color($material-app-accent, 700);
+        }
+      }
+    }
+  }
+}
